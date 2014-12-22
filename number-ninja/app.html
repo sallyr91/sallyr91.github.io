@@ -1,0 +1,193 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<title>Number Ninja!</title>
+			
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			
+			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+			<link rel="stylesheet" href="style.css">
+			
+			<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+			<script src="script.js"></script>
+			
+			<link href="http://sallyr91.github.io/apple-touch-icon.png" rel="apple-touch-icon" />
+			<link href="http://sallyr91.github.io/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+			<link href="http://sallyr91.github.io/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+			<link href="http://sallyr91.github.io/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+			<link href="http://sallyr91.github.io/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+			<link href="http://sallyr91.github.io/icon-hires.png" rel="icon" sizes="192x192" />
+			<link href="http://sallyr91.github.io/icon-normal.png" rel="icon" sizes="128x128" />
+		</head>
+		
+		<body onload="refresh()">
+			<!-- PAGES -->
+			<div data-role="page" id="mainmenu">
+				<header data-role="header" id="menu-header1">
+					<h1>Number Ninja!</h1>
+				</header>
+				
+				<div data-role="content" id="content">
+					<a href="#howtoplay" data-role="button" data-theme="a" data-icon="" data-rel="dialog" data-transition="fade">How To Play</a>
+					<a href="#startmenu" data-role="button" data-theme="a" data-transition="slide">Start</a>
+				</div>
+	
+				<footer data-role="footer">
+				</footer>
+			</div>
+			
+			<div data-role="page" id="startmenu">
+				<header data-role="header" id="menu-header2">
+					<h1>Number Ninja!</h1>
+				</header>
+				
+				<div data-role="content" id="content">
+					<a href="#highest" data-role="button" id="highest-button" data-icon="" data-theme="a"  data-transition="slide">Highest</a>
+					<a href="#lowest" data-role="button" id="lowest-button" data-icon="" data-theme="a" data-transition="slide">Lowest</a>
+					<a href="#odd" data-role="button" id="odd-button"  data-icon="" data-theme="a" data-transition="slide">Odd</a>
+					<a href="#even" data-role="button" id="even-button" data-icon="" data-theme="a" data-transition="slide">Even</a>
+					<a href="#mainmenu" data-role="button" data-theme="a" data-transition="slide" data-direction="reverse">Back</a>
+				</div>
+	
+				<footer data-role="footer">
+				</footer>
+			</div>
+			
+			<div data-role="page" id="highest">
+				<header data-role="header" id="highest-header">
+					<h1>Number Ninja! - Highest</h1>
+				</header>
+				
+				<div data-role="content" id="content">
+					<canvas id="highest-canvas">
+					</canvas>
+					<a href="#startmenu" id="highest-back" data-role="button" data-theme="a" data-transition="slide" data-direction="reverse">Back</a>
+					<script>
+						$("highest-button").unbind();
+						$("#highest-button").bind( "click", function() {
+							$("#highest-canvas").off();
+							$("#highest-canvas").on("tap", function(event){handleHighestTap(event)}); 	
+						
+							setupHighest(); 
+						});
+					</script>
+				</div>
+	
+				<footer data-role="footer">
+				</footer>
+			</div>
+			
+			<div data-role="page" id="lowest">
+				<header data-role="header" id="lowest-header">
+					<h1>Number Ninja! - Lowest</h1>
+				</header>
+				
+				<div data-role="content" id="content">
+					<canvas id="lowest-canvas">
+					</canvas>
+					<a href="#startmenu" id="lowest-back" data-role="button" data-theme="a" data-transition="slide" data-direction="reverse">Back</a>
+					<script>
+						$("lowest-button").unbind();
+						$("#lowest-button").bind( "click", function() {
+							$("#lowest-canvas").off();
+							$("#lowest-canvas").on('tap', function(event){handleLowestTap(event)}); 	
+						
+							setupLowest(); 
+						});
+					</script>
+				</div>
+	
+				<footer data-role="footer">
+				</footer>
+			</div>
+			
+			<div data-role="page" id="odd">
+				<header data-role="header" id="odd-header">
+					<h1>Number Ninja! - Odd</h1>
+				</header>
+				
+				<div data-role="content" id="content">
+					<canvas id="odd-canvas">
+					</canvas>
+					<a href="#startmenu" id="odd-back" data-role="button" data-theme="a" data-transition="slide" data-direction="reverse">Back</a>
+					<script>
+						$("#odd-button").unbind();
+						$("#odd-button").bind( "click", function() {
+							$("#odd-canvas").off();
+							$("#odd-canvas").on('tap', function(event){handleOddTap(event)}); 	
+						
+							setupOdd(); 
+						});
+					</script>
+				</div>
+	
+				<footer data-role="footer">
+				</footer>
+			</div>
+			
+			<div data-role="page" id="even">
+				<header data-role="header" id="even-header">
+					<h1>Number Ninja! - Even</h1>
+				</header>
+				
+				<div data-role="content" id="content">
+					<canvas id="even-canvas">
+					</canvas>
+					<a href="#startmenu" id="even-back" data-role="button" data-theme="a" data-transition="slide" data-direction="reverse">Back</a>
+					<script>
+						$("#even-button").unbind();
+						$("#even-button").bind( "click", function() {
+							$("#even-canvas").off();
+							$("#even-canvas").on('tap', function(event){handleEvenTap(event)}); 	
+						
+							setupEven(); 
+						});
+					</script>
+				</div>
+	
+				<footer data-role="footer">
+				</footer>
+			</div>
+			<!-- PAGES -->
+			
+			<!-- DIALOGS -->
+			<div data-role="page" data-dialog="true" id="howtoplay">
+				<header data-role="header">
+					<h1>How To Play</h1>
+				</header>
+
+				<div data-role="main" class="ui-content">
+					<p>Given the game mode: select the largest, smallest, odd, or even number.</p>
+				</div>
+
+				<div data-role="footer">
+				</div>
+			</div>
+
+			<div data-role="page" data-dialog="true" id="highscores">
+				<header data-role="header">
+					<h1>High Scores</h1>
+				</header>
+
+				<script> 
+					document.getElementById("highestScore").innerHTML = highestScore; 
+					document.getElementById("lowestScore").innerHTML  = lowestScore; 
+					document.getElementById("oddScore").innerHTML     = oddScore; 
+					document.getElementById("evenScore").innerHTML    = evenScore;
+				</script>
+				
+				<div data-role="main" class="ui-content">
+					<p>Highest: <div id="highestScore"></div><br/>
+					   Lowest: <div id="lowestScore"></div><br/>
+					   Odd: <div id="oddScore"></div><br/>
+					   Even: <div id="evenScore"></div><br/></p>
+				</div>
+
+				<footer data-role="footer">
+				</footer>
+			</div> 
+			<!-- DIALOGS -->
+		</body>
+	</html>		

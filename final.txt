@@ -1,0 +1,191 @@
+You are hired to create a web based version of a movie magazine. What would you do concerning the formatting of images, videos and sounds? How would you make the website responsive for use on devices other than a computer? Explain why you would make these choices, as well as how they would be implemented.
+               
+Would you use a lossless or a lossy compression strategy for a database of student names and addresses? Explain your answer.
+
+Name two advantages of using bitmapped images as opposed to vector images.
+-more detailed images, as you can edit each individual pixel in a bitmap.
+-
+
+
+Discuss two differences between HTML5 and HTML.
+	-HTML5 includes new elements like <canvas>, <nav>, <aside>, <section>, <article>, <main>, <time>
+         and so forth.
+	-built in audio/video support, no more flash(eventually).
+
+Explain one of the factors that affect digital video quality.
+
+Discuss an advantage of the cell animation technique.
+	-crisp clean look that is more detailed, highly customizable, faster drawing time, division
+	 of labour led to high artistic standards.
+
+What is the difference between frame-by-frame animation software and
+tween animation software?
+	-frame by frame: each frame is manually drawn to reflect motion sequence.
+	Gives detailed control of each motion.
+	Time consuming process.
+	-Tween animation: computer generates in-between frames based on two designated key frames.
+
+
+
+Name two rights that are granted to the owner of a copyright.
+	-the right to reproduce the copyrighted work;
+	-the right to prepare derivative works based upon the work;
+	-the right to distribute copies of the work to the public;
+	-the right to perform the copyrighted work publicly; and
+	-the right to display the copyrighted work publicly.
+
+
+Give one example of an exception to copyright protection.
+	-fair use, 
+        -face-to-face instruction, 
+        -and virtual instruction
+
+Explain the inherent copy protection of an analog signal.
+	-analog is very hard to copy and distribute. Analog is
+	 very unique and hard to reproduce exactly.
+
+What does it take to be a computer professional?
+
+Give an example of a Code of Ethics for a computer professional?
+
+Why must developers understand Copyright?
+	-They must guard against intentional or unintentional violation of the rights of others.
+	-Developers must protect their own work.
+	-Developers must frame agreements with the client to specify copyright ownership.
+
+
+Explain Fair Use of media in a project
+
+Animation has changed over the years. Explain how modern computer animation had changed the way animation takes place while still holding onto some traditional techniques.
+
+When making a webpage in HTML5, what does the Viewport represent?
+	-the area the user can currently see
+
+If I have 30 seconds of audio recorded at 11kHz, and I place it back at 22kHz (without resampling), how long will the audio take the play?
+
+Compare the following authoring tools:
+
+    Card Based
+    Icon Based
+    Time Based
+
+Why have an app cache manifest file for your website?
+
+What are alpha and beta testing ? What are their differences ? Should you use them in developing software? Explain.
+	Alpha means the features haven't been locked down, it's an exploratory phase. Beta means the features have been locked down and are under development (no other features will be added).
+ 
+
+What is Creative Commons?
+	-a licensing organization that allows you to easily and without cost
+         apply a license to your work that clearly describes how the work can
+         be used by others.
+
+Why are 'positioning elements' important in design for multimedia projects?
+
+Name an advantage/disadvantage of caching your web application?
+	-advantage: faster site, less database calls, etc.
+	-disadvantge: stale data - presenting old data to a user 
+
+What is copyright?
+	-the exclusive legal right, given to an originator 
+         or an assignee to print, publish, perform, film, or 
+         record literary, artistic, or musical material, 
+         and to authorize others to do the same.
+	-a form of legal protection given to creators of "original works of authorship."
+
+Explain the difference between RGB and CMYK color models.
+	-rgb stands for red green blue and is additive in that more color yeilds
+         a whiter appearance. rgb uses 256 possible values per red green and blue. monitors 
+         use rgb.
+         cmyk stands for cyan megenta yellow and key(black). it is subtractive in that
+         more color yeilds a blacker appearence. cmyk uses percent values for its possible
+         colors. mostly used in printing
+
+How does psychoacoustics apply to audio?
+	-psychoacoustics are the interplay between human perception and the properties of 
+         sound, how we percieve certain sounds based on the sounds content. This helps in audio
+         compression in that it lets use decide what information is appropriate to get rid of
+         when compressing an audio file (wheater it be unpleasent noise or noise we cannot hear).
+
+Describe some of the advantages of Vector images.
+	-small file sizes as you only have to store points and how they connect
+	 mathmatically.
+	-they scale well because when they are resized the relationship/connection of points
+ 	 is mathmatically recalculated.
+
+What are some features of the flipbook technique (List 3)?
+	-Quality of motion is based on rate of display.
+	-Speed is based on differences between images.
+	-Onionskinning: a technique used to draw new image based on the previous image.
+	-Registration: physically aligns images with one another.
+
+
+What is one way that film has enhanced possibilities of animation?
+	-Multiple reels allowed longer animations.
+	-Projectors displayed images at reliable frame rates.
+	-Animators could add sound to the motion.
+
+
+What is Cel Animation?
+	-Cel: drawings of individual frames made on sheets of celluloid.
+	-Drawings were then photographed and combined to produce the animated film. 
+
+
+What company perfected and popularized Cel Animation?
+	-disney
+
+An adaptable program is the ideal product. However, sometimes you know EXACTLY who your audience will be. What are some considerations that should be made when creating an app or website specifically for children as opposed to adults?
+
+ 
+
+What are common languages used in the development of interactive online multimedia?
+	-lingo
+	-javascript
+	-action script
+
+Define media
+	-the collection of channels (tv, radio, internet, etc...) 
+         through which the various forms of information and
+	 data reach us.
+
+What is a code of ethics?
+	-some written/unwritten document/agreement 
+         that outlines core values, beliefs, and principles of right and wrong within some
+         kind of group.
+ 	 
+List the 4 criteria used to determine fair use	
+	-the purpose and character of the use
+    	-the nature of the copyrighted work
+    	-the amount and substantiality used
+    	-the effect of the use upon the potential market for or value of the copyrighted work.
+	Fair use is likely to be found for uses that:
+	Are non-profit.
+	Are factual rather than creative.
+	Use small amounts of the work.
+	Have little or no effect on the value or potential market of the work.
+
+
+What are the 2 generations of DRM?
+	-First Generation: a “prevent and protect” strategy intended to limit access to, and use of, digital 				media.
+	-Second Generation: a “respect and promote” strategy to facilitate legal distribution and use of digital 				media.
+
+
+What are 3 methods to generate images for animation?
+	-hand drawing
+	-computer assited drawing (paint program)
+	-completely computer generated (tween, 3d modling programs)
+
+Describe stretch and squash
+
+What is the difference between tween animation and frame by frame animation?
+	-tween animation has intermediate frames between main frames creating the illusion
+         of smooth motion that one image evolves smoothly into another, 
+         frame by frame does not have theses so it looks choppy.
+
+What is performance animation?
+	-motion capture
+	Technique of recording motion of actual objects and mapping these motions to a computer-generated 	animated character.
+	Performers have sensors to track the motion of various body parts as they create the action sequences.
+
+
+What happens behind the scene when you click on a link in browser.
